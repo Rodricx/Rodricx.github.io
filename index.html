@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+
+    <!-- Link do Chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Teste Gráfico de Taxas</title>
+</head>
+<body>
+    <section id="content">
+
+      <div class="box-user">
+        <div class="user">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>
+        </div>
+
+        <ul class="info-user">
+          <li>Nome: Rodrigo</li>
+          <li>Sobrenome: Gomes</li>
+          <li>Cidade: São Paulo - SP</li>
+          <li>Nasc: 13/01/1991</li>
+        </ul>
+      </div>
+      
+      <div class="box-projecao">
+        <h1>Taxa selic 2023</h1>
+        <p class="mt">Representação dos valores em relação a taxa selic em 2023</p>
+        <table class="config-table">
+          <thead>
+            <tr>
+              <th><b>Jan</b></th>
+              <th><b>Fev</b></th>
+              <th><b>Mar</b></th>
+              <th><b>Abr</b></th>
+              <th><b>Mai</b></th>
+              <th><b>Jun</b></th>
+              <th><b>Jul</b></th>
+              <th><b>Ago</b></th>
+              <th><b>Set</b></th>
+              <th><b>Out</b></th>
+              <th><b>Nov</b></th>
+              <th><b>Dez</b></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+               <td>12,82 %</td>
+               <td>12,99 %</td>
+               <td>13,26 %</td>
+               <td>13,36 %</td>
+               <td>13,47 %</td>
+               <td>13,52 %</td>
+               <td>13,57 %</td>
+               <td>13,53 %</td>
+               <td>13,42 %</td>
+               <td>13,40 %</td>
+               <td>13,29 %</td>
+               <td>13,12 %</td>
+            </tr>
+          </tbody>
+        </table>    
+        
+        <p>Os dados disponibilizados na tabela acima estão representados no gráfico abaixo de acordo com o COPOM.</p>
+      </div>
+
+      <div class="box-grafico">
+        <canvas id="myChart"></canvas>
+
+        <ul class="font-pesquisa">
+          <li>Fonte: https://brasilindicadores.com.br/selic</li>
+        </ul>
+      </div>
+
+      <div class="box-projecao mt">
+        <h1>Projeção da taxa de inflação para 2024</h1>
+        <p class="mt">A projeção sobre a inflação será elaborada de forma fictícia em acordo com os solicitantes do exercício</p>
+
+        <table class="config-table">
+          <thead>
+            <tr>
+              <th><b>Jan</b></th>
+              <th><b>Fev</b></th>
+              <th><b>Mar</b></th>
+              <th><b>Abr</b></th>
+              <th><b>Mai</b></th>
+              <th><b>Jun</b></th>
+              <th><b>Jul</b></th>
+              <th><b>Ago</b></th>
+              <th><b>Set</b></th>
+              <th><b>Out</b></th>
+              <th><b>Nov</b></th>
+              <th><b>Dez</b></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+               <td>4,30 %</td>
+               <td>4,29 %</td>
+               <td>4,37 %</td>
+               <td>4,22 %</td>
+               <td>4,40 %</td>
+               <td>4,31 %</td>
+               <td>4,40 %</td>
+               <td>4,30 %</td>
+               <td>4,28 %</td>
+               <td>4,51 %</td>
+               <td>4,55 %</td>
+               <td>4,59 %</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="footer">Teste desenvolvido por Rodrigo Henrique</footer>
+</body>
+</html>
